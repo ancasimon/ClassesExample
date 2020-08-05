@@ -12,7 +12,7 @@ namespace ClassesExample.Animals
         //field
         private bool _isHungry = true;
 
-        //default constructor - the moment you add anythign to it, then it si no longer the default constructor, but a new constructor!
+        //default constructor - the moment you add anything to it, then it si no longer the default constructor, but a new constructor!
         //public Chicken() { } 
 
         //constructor
@@ -35,5 +35,13 @@ namespace ClassesExample.Animals
                 Console.WriteLine($"{Name} is not hungry.");
             }
         }
+
+
+        //method overloading
+        public void Peck()
+        {
+            Peck("Corn"); //here I am calling the original Peck method.
+        }
+        //now we have 2 Peck methods on the Chicken class - one that takes in a type of food and one that takes in nothing;
     }
 }

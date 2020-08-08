@@ -6,6 +6,9 @@ namespace ClassesExample.Animals
 {
     class Llama
     {
+        private int _numberOfJumps;
+        private int _totalHeightOfJumps;
+
         public int Age { get; set; } //this is an auto-property
         //read-only property - set only in the constructor:
         //public string Color { get; }
@@ -18,6 +21,13 @@ namespace ClassesExample.Animals
         {
             Age = age;
             Color = color;
+        }
+
+        //let's keep track of how many times a llama jumps and cumulatively add how high it jumps:
+        public void Jump(int howHigh)
+        {
+            _numberOfJumps++;
+            _totalHeightOfJumps += howHigh;
         }
 
         public void Dye(string color)

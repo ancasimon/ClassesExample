@@ -12,7 +12,7 @@ namespace ClassesExample.Animals
         //field
         private bool _isHungry = true;
 
-        //default constructor - the moment you add anything to it, then it si no longer the default constructor, but a new constructor!
+        //default constructor - the moment you add anything to it, then it is no longer the default constructor, but a new constructor!
         //public Chicken() { } 
 
         //constructor
@@ -22,7 +22,7 @@ namespace ClassesExample.Animals
             Console.WriteLine($"{name} got instantiated.");
         }
 
-        //method (signature = accessibility modifier + return type + Name +({optional) parameters
+        //method (signature = accessibility modifier + return type + Name +({optional) parameters)
         public void Peck(string typeOfFood)
         {
             if(_isHungry)
